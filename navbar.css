@@ -1,0 +1,32 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+display: flex;
+background-color: #94ff0c;
+gap: 20px;
+align-items: center;
+justify-content: center;
+/* margin-left: 10px; */
+}
+.navbar2{
+background: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.navbar2 button {
+border: 1px solid #94ff0c;
+background-color: white;
+color: black;
+gap: 40px;
+padding: 2px;
+margin: 10px;
+}

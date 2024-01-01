@@ -1,0 +1,29 @@
+.krishik {
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32%;
+  color: #136805;
+}
+.transparent-container {
+  width: auto;
+  height: auto;
+  border-radius: 11px;
+  background: #27880382;
+  margin-top: 0%;
+  margin: 0 1%
+}
+.transp h1 {
+  font-family: Montserrat Alternates;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #136805;
+  margin-left: 20%;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+}
