@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="page2.css" />
+    <link rel="stylesheet" href="page4.css" />
+    <title>page3</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <p>Master</p>
+        <p>Transaction</p>
+        <p>Stock Report</p>
+        <p>Account Report</p>
+        <p>Position</p>
+        <p>MIS Report</p>
+        <p>Final Report</p>
+        <p>BackUp</p>
+        <p>Messenger</p>
+        <p>Setting</p>
+        <p>About Us</p>
+    </div>
+    <div class="navbar2">
+        <button>Item Master</button>
+        <button>Modify Items</button>
+        <button>Sales</button>
+        <button>Purchase</button>
+        <button>Stock Report</button>
+        <button>Debtors</button>
+        <button>A/C Display</button>
+        <button>Profit Report</button><button>BackUp</button>
+        <button>Expiry Date</button>
+        <button>A/C Master</button>
+    </div>
+
+    <div class="krishik" style="z-index: -10; position: absolute"></div>
+    <div class="transparent-container" style="padding: 20px; margin-top: 100px">
+        <div class=""
+            style="display: flex; position: relative;flex-direction: column;background-color: white;padding: 10px;border: 5px solid greenyellow;border-radius: 10px;">
+            <p style="
+            position: absolute;
+            top: -50px;
+            left: 10%;
+            background-color: rgb(2, 222, 2);
+            padding: 10px 10px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            font-weight: bold;
+          ">
+                Customer Sales , Sales Return , Account Display , Deposite
+            </p>
+            <div class="" style="margin: 1%; display: flex;  gap: 1%;">
+                <div class="" style="display: flex; align-items: center; justify-content: center;gap: 1rem;">
+                    <div class="">
+                        <label for="">Name:</label>
+                        <input type="text" name="" id="" />
+                    </div>
+                    <div class="">
+                        <label for="">Address:</label>
+                        <input type="text" name="" id="" />
+                    </div>
+                    <div class="">
+                        <label for="">Contact No. :</label>
+                        <input type="number" name="" id="" />
+                    </div>
+                    <div class="">
+                        <label for="">Email ID :</label>
+                        <input type="email" name="" id="" />
+                    </div>
+                </div>
+                <div class="" style="display: flex; align-items: center; justify-content: center;gap: 1rem;">
+                    <div class="">
+                        <label for="">Bill Date:</label>
+                        <input type="date" name="" id="" />
+                    </div>
+                    <div class="">
+                        <label for="">Bill No. :</label>
+                        <input type="number" name="" id="" />
+                    </div>
+                    <div class="">
+                        <label for="">Payment Type:</label>
+                        <select name="" id="" style="width: 100%;padding: 5px; border-radius: 5px;">
+                            <option value="" selected>Cash </option>
+                            <option value="">UPI</option>
+                            <option value="Card">Card</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="">Payment Mode :</label>
+                        <select name="" id="" style="width: 100%;padding: 5px; border-radius: 5px;">
+                            <option value="" selected>Cash </option>
+                            <option value="">UPI</option>
+                            <option value="Card">Card</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class=""
+                style="display: flex;align-items: center;justify-content: center;gap: 1%; background-color: greenyellow;padding: 10px;border-radius: 10px">
+                <div class="">
+                    <label>Search By</label>
+                    <input type="text" disabled placeholder="Item Name"
+                        style="color: white; ::placeholder { color: balck; }" />
+                    <input type="text" placeholder="Enter search term" />
+                </div>
+                <div class=""><label for="">QTY :</label><input type="number"></div>
+                <div class=""><label for="">Price :</label><input type="number"></div>
+                <div class=""><label for="">Discount Price :</label><input type="number"></div>
+            </div>
+            <div class="" style="width: 100%; display: flex; align-items: center;justify-content: center;margin-top: 2%;">
+                <table border="5" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>SR.NO</th>
+                            <th>Item No</th>
+                            <th>Batch No</th>
+                            <th>Pkg</th>
+                            <th>Qty</th>
+                            <th>Exp Date</th>
+                            <th>Sale Price</th>
+                            <th>Discount Price</th>
+                            <th>Net Amount</th>
+                            <th>GST</th>
+                            <th>SGST</th>
+                            <th>CGST Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Row 1 data -->
+                            <td>1</td>
+                            <td>Item123</td>
+                            <td>Batch001</td>
+                            <td>Box</td>
+                            <td>10</td>
+                            <td>2023-12-31</td>
+                            <td>25.00</td>
+                            <td>5.00</td>
+                            <td>200.00</td>
+                            <td>18%</td>
+                            <td>9%</td>
+                            <td>9.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="" style="margin: 2% 10% ; display: flex;border: 8px solid greenyellow; border-radius: 10px; padding: 10px ;">
+                <div class=""><label for="">Total Bill:</label> <input type="text"></div>
+                <div class=""><label for="">Bill Discount:</label> <input type="text"></div>
+                <div class=""><label for="">Net Bill:</label> <input type="text"></div>
+                <div class=""><label for="">TCS%:<input type="text"></div>
+                <div class=""><label for="">TCS% Amount:</label> <input type="text"></div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="" style="
+          margin: 3%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        ">
+        <button type="button" style="
+            padding: 1%;
+            margin: 0 1%;
+            border-radius: 10px;
+            background-color: greenyellow;
+            box-shadow: 10px black;
+          ">
+            Save
+        </button>
+        <button type="button" style="
+            padding: 1%;
+            margin: 0 1%;
+            border-radius: 10px;
+            background-color: greenyellow;
+            box-shadow: 10px black;
+          ">
+            Print
+        </button>
+        <button type="button" style="
+            padding: 1%;
+            margin: 0 1%;
+            border-radius: 10px;
+            background-color: greenyellow;
+            box-shadow: 10px black;
+          ">
+            Modify
+        </button>
+        <button type="button" style="
+            padding: 1%;
+            margin: 0 1%;
+            border-radius: 10px;
+            background-color: greenyellow;
+            box-shadow: 10px black;
+          ">
+            Delete
+        </button>
+        <button type="button" style="
+            padding: 1%;
+            margin: 0 1%;
+            border-radius: 10px;
+            background-color: greenyellow;
+            box-shadow: 10px black;
+          ">
+            Close
+        </button>
+        <button type="button" style="
+            padding: 1%;
+            margin: 0 1%;
+            border-radius: 10px;
+            background-color: greenyellow;
+            box-shadow: 10px black;
+          ">
+            Cancel
+        </button>
+    </div>
+    </div>
+</body>
+
+</html>
