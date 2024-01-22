@@ -1,0 +1,116 @@
+.navbar{
+    padding: 0;
+    margin: -8px;
+    display: flex;
+    flex-direction: column;
+}
+.firstNav ul , .secondNav ul{
+    display: flex;
+    align-items: center;
+}
+.firstNav{
+    padding: 0;
+    margin: 0;
+    height: 56px;
+    display: flex;
+    background-color: greenyellow;
+}
+.firstNav ul li  , .secondNav ul li {
+    margin: 5px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.secondNav ul li {
+    box-shadow: inset -1px -1px 10px -1px greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+}
+.firstNav ul li {
+    padding: 10px;
+}
+ .body::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 120vh;
+    background: url('krishak.avif'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center; 
+    margin: -8px;
+    top: 18%;
+    z-index: -1;
+    filter: blur(2px);
+}
+input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #47c747;
+}
+.item-master{
+    background: #47c74756;
+    display: none;
+    padding: 1px 35px;
+    padding-bottom: 19px;
+    margin-left: 21%;
+    margin-top: 1%;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+}
+.heading p {
+    background: #11cf11;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 19px 7px;
+    margin: -5px;
+    border-bottom-left-radius: 38px;
+    border-top-right-radius: 47px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.heading span{
+    border: 5px solid green;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.item-details , .price-details{
+    background: white;
+    border: 4px solid rgb(50 144 13);
+    margin: 7px 36px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.background{
+    background:#70da70;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-details p , .price-details p {
+    font-size: 24px;
+    font-weight: bold;
+}
+button{
+    padding: 18px;
+    border: 0;
+    background: #3b8b3b;
+    box-shadow: 1px 5px 10px -1px;
+    border-radius: 11px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 36px;
+    cursor: pointer;
+}
+.item-info{
+    display: flex;
+}

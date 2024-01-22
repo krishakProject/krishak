@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item</title>
+    <link rel="stylesheet" href="Item.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="firstNav">
+        <ul>
+          <li>Master</li>
+          <li>Transaction</li>
+          <li>Position</li>
+          <li>Stock Report</li>
+          <li>Account Report</li>
+          <li>MIS Report</li>
+          <li>Final Report</li>
+          <li>BackUp</li>
+          <li>Messenger</li>
+          <li>Settings</li>
+          <li>AboutUS</li>
+        </ul>
+      </div>
+      <div class="secondNav">
+        <ul>
+          <li class="ItemMasterNav" onclick="openItemMaster()">Item Master</li>
+          <li>Modify Items</li>
+          <li>Sales</li>
+          <li>Purchase</li>
+          <li>Stock Report</li>
+          <li>Debtors</li>
+          <li>A/C Display</li>
+          <li>Profit Report</li>
+          <li>BackUp</li>
+          <li>Expiry Date</li>
+          <li>A/C Master</li>
+        </ul>
+      </div>
+    </div>
+    <div class="body">
+      <div class="item-master">
+        <div class="heading">
+       <p>New Item information</p>
+      <span class="material-symbols-outlined" onclick="hideItemmaster()">close</span>
+      </div>
+      <div class="background">
+        <div class="item-info">
+        <div class="item-details">
+          <p>Item Details</p>
+          <div>
+         <label for="">Item Name :</label>
+         <input type="text" placeholder="enter product name">
+        </div>
+        <div>
+          <label for="">Manufacture:</label>
+          <input type="text" placeholder="enter company name">
+        </div>
+        <div>
+          <label for="">Item type :</label>
+          <input type="text" placeholder="e.g pesticide , fertiliser etc">
+        </div>
+        <div>
+          <label for="">Packing:</label>
+          <input type="text" placeholder="quantiy">
+        </div>
+        <div>
+          <label for="">Batch no: </label>
+          <input type="text" placeholder="enter batch no">
+        </div>
+        <div>
+          <label for="">Location</label>
+          <input type="text" placeholder="shop/code">
+        </div>
+        <div>
+          <label for="">Opening : </label>
+          <input type="text" placeholder="enter stock quantiy">
+        </div>
+        <div>
+          <label for="">MFD date :</label>
+          <input type="date">
+        </div>
+        <div>
+          <label for="">Expiry date :</label>
+          <input type="date">
+        </div>
+        <div>
+          <label for="">Hsn no:</label>
+          <input type="text">
+        </div>
+        </div>
+        <div class="price-details">
+           <p>Price Details</p>
+           <div>
+            <label for="">Purchase proce with GST</label>
+            <input type="text">
+           </div>
+           <div>
+            <label for="">GST % :</label>
+            <input type="text">
+           </div>
+           <div>
+            <label for="">Purchase Price:</label>
+            <input type="text">
+           </div>
+           <div>
+            <label for="">MRP :</label>
+            <input type="text">
+           </div>
+           <div>
+            <label for="">Cash Price-retail:</label>
+            <input type="text">
+           </div>
+           <div>
+            <label for="">Credit price retails:</label>
+            <input type="text">
+           </div>
+           <div>
+            <label for="">Cash price wholesale:</label>
+            <input type="text">
+           </div>
+           <div>
+            <label for="">Credit price wholesale:</label>
+            <input type="text">
+           </div>
+           <div>
+            <label for="">Barcode:</label>
+            <input type="text">
+           </div>
+        </div>
+      </div>
+        <div class="buttons">
+          <button>Save</button>
+          <button>Save and New</button>
+          <button>new</button>
+          <button onclick="hideItemmaster()">Cancle</button>
+       </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function openItemMaster(){
+      const ItemMaster = document.querySelector('.item-master');
+      ItemMaster.style.display = 'inline-block'
+      const ItemMasterNav = document.querySelector('.ItemMasterNav')
+      ItemMasterNav.style.background = "#2aa52a"
+    }
+    function hideItemmaster(){
+      const ItemMaster = document.querySelector('.item-master');
+      ItemMaster.style.display = 'none'
+    }
+  </script>
+</html>
