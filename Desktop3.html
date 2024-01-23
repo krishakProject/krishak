@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="Desktop3.css">
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="firstNav">
+            <ul>
+                <li>Master</li>
+                <li>Transaction</li>
+                <li>Position</li>
+                <li>Stock Report</li>
+                <li>Account Report</li>
+                <li>MIS Report</li>
+                <li>Final Report</li>
+                <li>BackUp</li>
+                <li>Messenger</li>
+                <li>Settings</li>
+                <li>AboutUS</li>
+            </ul>
+        </nav>
+        <section class="secondNav">
+            <ul>
+                <li>Item Master</li>
+                <li>Modify Items</li>
+                <li>Sales</li>
+                <li>Purchase</li>
+                <li>Stock Report</li>
+                <li>Debtors</li>
+                <li>A/C Display</li>
+                <li>Profit Report</li>
+                <li>BackUp</li>
+                <li>Expiry Date</li>
+                <li>A/C Master</li>
+            </ul>
+        </section>
+    </header>
+    <main class="w-full" style="margin-top: 5px;">
+        <div class="modal-overlay mx-auto flex flex-col items-start justify-center" style="gap: 4px; padding: 0 60px;">
+            <div class="tab" style="padding: 16px">
+                <button class="tab-btn1">Costumer</button>
+                <button class="tab-btn2">Sales</button>
+            </div>
+            <div class="form-overlay flex flex-col items-center justify-center" style="gap: 25px;">
+                <div class="form flex flex-col items-start justify-center border" style="gap: 6px; padding: 0 30px;">
+                    <h2>Costumer Details</h2>
+                    <form id="form" class="flex flex-row items-start justify-start w-full" style="gap: 5rem;">
+                        <table>
+                            <tr>
+                                <td><label class="label" for="name">Name</label></td>
+                                <td>
+                                    <input type="text" id="name" class="inp" placeholder="Enter Name">
+                                    <span class="spn"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="email">Email</label></td>
+                                <td>
+                                    <input type="text" id="email" placeholder="Enter Email" class="inp">
+                                    <span class="spn"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="contact">contact No.</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="contact" placeholder="Enter contact">
+                                    <span class="spn"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="area">Area</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="area" placeholder="Enter area">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="town">town</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="town" placeholder="Enter town">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="taluka">taluka</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="taluka" placeholder="Enter taluka">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="district">district</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="district" placeholder="Enter district">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="state">state</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="state" placeholder="Enter state">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="gst">gst</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="gst" placeholder="Enter gst">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="adhar">adhar</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="adhar" placeholder="Enter adhar">
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td><label class="label" for="openingBalance">openingBalance</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="openingBalance"
+                                        placeholder="Enter openingBalance">
+                                    <span class="spn"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="interestType">interestType</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="interestType" placeholder="Enter interestType">
+                                    <span class="spn"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="interestRate">interestRate</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="interestRate" placeholder="Enter interestRate">
+                                    <span class="spn"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="type">type</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="type" placeholder="Enter type">
+                                    <span class="spn"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="label" for="status">status</label></td>
+                                <td>
+                                    <input class="inp" type="text" id="status" placeholder="Enter status">
+                                    <span class="spn"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="flex flex-row items-center justify-center" style="gap:90px;">
+                    <button id="save" class="btn">Save</button>
+                    <button id="saveAndNew" class="btn">Save & New</button>
+                    <button id="new" class="btn">New</button>
+                    <button id="cancel" class="btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="Desktop3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.navbar {
+    padding: 0;
+    margin: -8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstNav ul,
+.secondNav ul {
+    display: flex;
+    align-items: center;
+}
+
+.firstNav {
+    padding: 0;
+    margin: 0;
+    height: 56px;
+    display: flex;
+    background-color: greenyellow;
+}
+
+.firstNav ul li,
+.secondNav ul li {
+    margin: 5px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondNav ul li {
+    box-shadow: inset -1px -1px 10px -1px greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.firstNav ul li {
+    padding: 10px;
+}
+
+main {
+    background-image: url(./images/background.png);
+}
+
+.modal-overlay {
+    width: 1106px;
+    height: 669px;
+    /* flex-shrink: 0; */
+    border-radius: 11px;
+    background: rgba(199, 255, 179, 0.51);
+}
+
+.tab {
+    border-radius: 0 5px 0 5px;
+    background-image: url(./images/bg.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.tab-btn1 {
+    border-radius: 6px;
+    background: #94FF0C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 137px;
+    height: 31px;
+}
+
+.tab-btn2 {
+    border-radius: 6px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 137px;
+    height: 31px;
+    flex-shrink: 0;
+}
+
+.form-overlay {
+    width: 1022px;
+    height: 596px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: #C7FFB3;
+}
+
+
+.form {
+    width: 860px;
+    height: 398px;
+    /* flex-shrink: 0; */
+    border-radius: 11px;
+    border: 3px solid #94FF0C;
+    background: rgba(255, 255, 255, 0.83);
+}
+
+.btn {
+    padding: 7px 33px 5px 20px;
+    display: inline-flex;
+    padding: 7px 33px 5px 20px;
+    align-items: center;
+    border-radius: 6px;
+    background: #94FF0C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    color: #000;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.label {
+    color: #000;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.inp {
+    padding: 12px;
+    width: 154px;
+    height: 17px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #94FF0C;
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: small;
+    position: relative;
+}
+
+.spn {
+    position: relative;
+    background-image: url(./images/chevronDown.png);
+    width: 24px;
+    height: 20px;
+    flex-shrink: 0;
+}
