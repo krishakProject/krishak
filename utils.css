@@ -1,0 +1,47 @@
+.mx-auto {
+    margin: 0 auto;
+}
+
+.border {
+    border: 5px solid black;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.rounded-md {
+    border-radius: 17px;
+}
+
+.rounded-lg {
+    border-radius: 11px;
+}

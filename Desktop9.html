@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="utils.css">
-    <link rel="stylesheet" href="Desktop3.css">
+    <link rel="stylesheet" href="Desktop9.css">
     <style>
         table {
             border-collapse: separate;
@@ -51,12 +51,12 @@
     <main class="w-full" style="margin-top: 5px;">
         <div class="modal-overlay mx-auto flex flex-col items-start justify-center" style="gap: 4px; padding: 0 60px;">
             <div class="tab" style="padding: 16px">
-                <button class="tab-btn1">Costumer</button>
-                <button class="tab-btn2">Sales</button>
+                <button class="tab-btn1">Supplier</button>
+                <button class="tab-btn2">Purchase</button>
             </div>
             <div class="form-overlay flex flex-col items-center justify-center" style="gap: 25px;">
                 <div class="form flex flex-col items-start justify-center border" style="gap: 6px; padding: 0 30px;">
-                    <h2>Costumer Details</h2>
+                    <h2>Supplier Details</h2>
                     <form id="form" class="flex flex-row items-start justify-start w-full" style="gap: 5rem;">
                         <table>
                             <tr>
@@ -67,16 +67,16 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><label class="label" for="email">Email</label></td>
+                                <td><label class="label" for="company">Company Name</label></td>
                                 <td>
-                                    <input type="text" id="email" placeholder="Enter Email" class="inp">
+                                    <input class="inp" type="text" id="company" placeholder="Enter contact">
                                     <span class="spn"></span>
                                 </td>
                             </tr>
                             <tr>
-                                <td><label class="label" for="contact">contact No.</label></td>
+                                <td><label class="label" for="email">Email</label></td>
                                 <td>
-                                    <input class="inp" type="text" id="contact" placeholder="Enter contact">
+                                    <input type="text" id="email" placeholder="Enter Email" class="inp">
                                     <span class="spn"></span>
                                 </td>
                             </tr>
@@ -135,14 +135,19 @@
                             <tr>
                                 <td><label class="label" for="interestType">interestType</label></td>
                                 <td>
-                                    <input class="inp" type="text" id="interestType" placeholder="Enter interestType">
+                                    <!-- <input class="inp" type="text" id="interestType" placeholder="Enter interestType"> -->
+                                    <select name="interestType" id="interestType" class="inp">
+                                        <option value="weekly">Weekly</option>
+                                        <option value="monthly">Monthly</option>
+                                        <option value="yearly">Yearly</option>
+                                    </select>
                                     <span class="spn"></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td><label class="label" for="interestRate">interestRate</label></td>
                                 <td>
-                                    <input class="inp" type="text" id="interestRate" placeholder="Enter interestRate">
+                                    <input class="inp" type="number" id="interestRate" placeholder="Enter interestRate">
                                     <span class="spn"></span>
                                 </td>
                             </tr>
