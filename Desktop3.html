@@ -135,14 +135,19 @@
                             <tr>
                                 <td><label class="label" for="interestType">interestType</label></td>
                                 <td>
-                                    <input class="inp" type="text" id="interestType" placeholder="Enter interestType">
+                                    <!-- <input class="inp" type="text" id="interestType" placeholder="Enter interestType"> -->
+                                    <select name="interestType" id="interestType" class="inp">
+                                        <option value="weekly">Weekly</option>
+                                        <option value="monthly">Monthly</option>
+                                        <option value="yearly">Yearly</option>
+                                    </select>
                                     <span class="spn"></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td><label class="label" for="interestRate">interestRate</label></td>
                                 <td>
-                                    <input class="inp" type="text" id="interestRate" placeholder="Enter interestRate">
+                                    <input class="inp" type="number" id="interestRate" placeholder="Enter interestRate">
                                     <span class="spn"></span>
                                 </td>
                             </tr>
