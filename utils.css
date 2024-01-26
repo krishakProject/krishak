@@ -22,6 +22,10 @@
     flex-direction: column;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .items-center {
     align-items: center;
 }
@@ -36,6 +40,10 @@
 
 .justify-start {
     justify-content: start;
+}
+
+.justify-between {
+    justify-content: space-between;
 }
 
 .rounded-md {

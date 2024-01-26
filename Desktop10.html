@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="Desktop10.css">
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="firstNav">
+            <ul>
+                <li>Master</li>
+                <li>Transaction</li>
+                <li>Position</li>
+                <li>Stock Report</li>
+                <li>Account Report</li>
+                <li>MIS Report</li>
+                <li>Final Report</li>
+                <li>BackUp</li>
+                <li>Messenger</li>
+                <li>Settings</li>
+                <li>AboutUS</li>
+            </ul>
+        </nav>
+        <section class="secondNav">
+            <ul>
+                <li>Item Master</li>
+                <li>Modify Items</li>
+                <li>Sales</li>
+                <li>Purchase</li>
+                <li>Stock Report</li>
+                <li>Debtors</li>
+                <li>A/C Display</li>
+                <li>Profit Report</li>
+                <li>BackUp</li>
+                <li>Expiry Date</li>
+                <li>A/C Master</li>
+            </ul>
+        </section>
+    </header>
+    <main class="w-full" style="margin-top: 5px;">
+        <div class="modal-overlay mx-auto flex flex-col items-start justify-center" style="gap: 4px; padding: 0 60px;">
+            <div class="tab flex items-center justify-between w-full" style="padding: 16px">
+                <div>
+                    <button class="tab-btn1 tab-btn1-typo">Supplier</button>
+                    <button class="tab-btn2 tab-btn2-typo">Purchase</button>
+                </div>
+                <div>
+                    <button class="tab-btn2 tab-btn1-typo">Return</button>
+                    <button class="tab-btn2 tab-btn1-typo">Payment</button>
+                    <button class="tab-btn2 tab-btn1-typo">Account</button>
+                </div>
+            </div>
+            <div class="form-overlay flex flex-col items-center justify-center" style="gap: 25px;">
+                <div class="form-container flex flex-col items-start justify-center border"
+                    style="gap: 10px; padding: 0 4px;">
+                    <form id="form" class="flex flex-col items-start justify-start w-full" style="gap: 4px;">
+                        <div class="mx-auto flex items-center justify-center" style="width: fit-content; gap: 6px;">
+                            <div>
+                                <label class="label" for="name">Supplier Name</label>
+                                <input type="text" id="name" class="inp" placeholder="Enter Name">
+                                <span class="spn"></span>
+                            </div>
+                            <div>
+                                <label class="label" for="name">Address</label>
+                                <input type="text" id="address" class="inp" placeholder="Enter Address">
+                            </div>
+                            <div>
+                                <label class="label" for="name">Contact No.</label>
+                                <input type="text" id="contact" class="inp" placeholder="Enter No.">
+                            </div>
+                            <div>
+                                <label class="label" for="name">email.id</label>
+                                <input type="email" id="email" class="inp" placeholder="xyz@gmail.com">
+                            </div>
+                        </div>
+                        <div class="mx-auto flex items-center justify-center" style=" width: fit-content; gap: 6px;">
+                            <div>
+                                <label class="label" for="name">Bill Date</label>
+                                <input type="date" id="billDate" class="inp" placeholder="Enter Name">
+                            </div>
+                            <div>
+                                <label class="label" for="name">Invoice No.</label>
+                                <input type="text" id="invoiceNo" class="inp" placeholder="Enter No.">
+                            </div>
+                            <div>
+                                <label class="label" for="name">Payment Type</label>
+                                <input type="text" id="paymentType" class="inp" placeholder="cash">
+                                <span class="spn"></span>
+                            </div>
+                            <div>
+                                <label class="label" for="name">Payment Mode</label>
+                                <input type="text" id="paymentMode" class="inp" placeholder="cash">
+                                <span class="spn"></span>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="flex items-center justify-start flex-wrap search" style=" gap: 10px;">
+                        <label class="label" for="search">Search By</label>
+                        <input class="inp" type="text" placeholder="Item Name">
+                        <input class="inp" type="text" placeholder="Enter Product Name">
+                        <label class="label" for="">Qty.</label>
+                        <input class="inp" type="text">
+                        <label class="label" for="price">Price</label>
+                        <input class="inp" type="text">
+                        <input class="inp" type="text" placeholder="Disc per">
+                    </form>
+                    <table>
+                        <thead>
+                            <th>SR.NO</th>
+                            <th>Item Name</th>
+                            <th>Batch No.</th>
+                            <th>Pkg.</th>
+                            <th>Qty.</th>
+                            <th>Exp Date</th>
+                            <th>Sales Price</th>
+                            <th>Discount%</th>
+                            <th>Net Amount</th>
+                            <th>IGST</th>
+                            <th>SGST</th>
+                            <th>CGST Amount</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="flex items-center justify-center w-full" style="gap: 8px;">
+                        <div>
+                            <div>
+                                <label class="total" for="totalBill">Total Bill</label>
+                                <input class="output" type="text">
+                            </div>
+                            <div>
+                                <label class="total" for="billDiscount">Bill Discount</label>
+                                <input class="output" type="text">
+                            </div>
+                            <div>
+                                <label class="total" for="netBill">Net Bill</label>
+                                <input class="output" type="text">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label class="total" for="tsc">TSC%</label>
+                                <input class="output" type="text">
+                            </div>
+                            <div>
+                                <label class="total" for="tscAmount">TSC Amount</label>
+                                <input class="output" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-center" style="gap:90px;">
+                    <button id="save" class="btn">Save</button>
+                    <button id="saveAndNew" class="btn">Save & New</button>
+                    <button id="new" class="btn">New</button>
+                    <button id="cancel" class="btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="Desktop10.js"></script>
+</body>
+
+</html>

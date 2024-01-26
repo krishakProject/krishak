@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 0;
+    margin: -8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstNav ul,
+.secondNav ul {
+    display: flex;
+    align-items: center;
+}
+
+.firstNav {
+    padding: 0;
+    margin: 0;
+    height: 56px;
+    display: flex;
+    background-color: greenyellow;
+}
+
+.firstNav ul li,
+.secondNav ul li {
+    margin: 5px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondNav ul li {
+    box-shadow: inset -1px -1px 10px -1px greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.firstNav ul li {
+    padding: 10px;
+}
+
+main {
+    background-image: url(./images/background.png);
+}
+
+.modal-overlay {
+    width: 1106px;
+    height: 669px;
+    /* flex-shrink: 0; */
+    border-radius: 11px;
+    background: rgba(199, 255, 179, 0.51);
+}
+
+.tab {
+    border-radius: 0 5px 0 5px;
+    background-image: url(./images/bg.svg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+.tab-btn1 {
+    border-radius: 6px;
+    background: #94FF0C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 137px;
+    height: 31px;
+}
+
+.tab-btn1-typo {
+    color: #136805;
+    text-shadow: 10px 4px 8px rgba(0, 0, 0, 0.25);
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tab-btn2-typo {
+    color: #FFFDFD;
+    text-shadow: 10px 4px 8px rgba(0, 0, 0, 0.25);
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tab-btn2 {
+    border-radius: 6px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 137px;
+    height: 31px;
+    flex-shrink: 0;
+}
+
+.form-overlay {
+    width: 1022px;
+    height: 596px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: #C7FFB3;
+}
+
+
+.form-container {
+    width: 973px;
+    height: 444px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 3px solid #94FF0C;
+    background: rgba(255, 255, 255, 0.83);
+}
+
+.search {
+    width: 952px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #94FF0C;
+}
+
+.btn {
+    padding: 7px 33px 5px 20px;
+    display: inline-flex;
+    padding: 7px 33px 5px 20px;
+    align-items: center;
+    border-radius: 6px;
+    background: #94FF0C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    color: #000;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.label {
+    color: #000;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.inp {
+    padding: 12px;
+    width: 154px;
+    height: 17px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #94FF0C;
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: small;
+    position: relative;
+}
+
+.spn {
+    position: relative;
+    background-image: url(./images/chevronDown.png);
+    width: 24px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+table {
+    width: 929px;
+    height: 219px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+th {
+    width: 96px;
+    height: 48px;
+    flex-shrink: 0;
+    background: #C7FFB3;
+}
+
+.total {
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.output {
+    width: 83px;
+    height: 17px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    border: 1px solid #94FF0C;
+    background: #FFF;
+    box-shadow: 2px 2px 17px 0px #C7FFB3 inset;
+}
