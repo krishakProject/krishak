@@ -3,14 +3,14 @@ const path = require('path');
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 1000,
-    height: 800,
+    width: 800,
+    height: 600,
     webPreferences: {
       nodeIntegration: true
     }
   });
 
-  win.loadFile(path.join(__dirname, 'src/designs/desktop/Desktop5.html'));
+  win.loadFile(path.join(__dirname, 'src/index.html'));
 }
 
 app.whenReady().then(createWindow);
